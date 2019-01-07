@@ -25,6 +25,8 @@ class Solution(object):
         size = 0
         
         for index, char in enumerate(s):
+
+            # if the character has not been met yet or the last appearance of the character is before the current starting character, then we add the character
             if not char in _dict or _dict[char] < start:
                 size += 1
             else:
@@ -33,7 +35,7 @@ class Solution(object):
             
             _dict[char] = index
 
-            # by using if-statement instead of max function, the runtime can be further improved
+            # by using if-statement instead of max function, the runtime can be further improved (64ms)
             max_length = max(max_length, size)
             
         return max_length
