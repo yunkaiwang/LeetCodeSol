@@ -1,9 +1,21 @@
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         """
-        :type s: str
-        :rtype: int
+        68ms approach
         """
+        if not s:
+            return 0
+    
+        dict = {}
+        cur_start, max_len = 0, 0
+        
+        for i, c in enumerate(s):
+            if c in dict and dict[c] >= cur_start:
+                cur_start = dict[c] + 1
+            else:
+                max_len = max(i - cur_start + 1, max_len)
+            dict[c] = i
+        return max_len
         
         """104ms approach
         max_length = 0 # initialize to 0
