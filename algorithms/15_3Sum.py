@@ -1,6 +1,35 @@
 class Solution:
     def threeSum(self, nums):
         """
+        optimized solution beats 97%
+        """
+        if len(nums) < 3:
+            return []
+        count = {}
+        for num in nums:
+            if num in count:
+                count[num] = count[num] + 1
+            else:
+                count[num] = 1
+        
+        sols = []
+        
+        uniqueNums = list(count.keys())
+        uniqueNums.sort()
+        
+        for i, num in enumerate(uniqueNums):
+            target = - num*2
+            if target in count and ((target == num and count[num] > 2) or (target > num and count[num] > 1)):
+                sols.append([num, num, -num*2])
+            
+            for j in range(i+1, len(uniqueNums)):
+                target = - num - uniqueNums[j]
+                if target in count and target >= uniqueNums[j]:
+                    if target > uniqueNums[j] or count[uniqueNums[j]] >= 2:
+                        sols.append([num, uniqueNums[j], target])
+        return sols
+
+        """
         Accepted O(n^2) solution based on the idea of 2sum, beats 86%
         """
         if len(nums) < 3:
