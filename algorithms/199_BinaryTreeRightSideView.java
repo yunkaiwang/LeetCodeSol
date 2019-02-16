@@ -7,6 +7,39 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+class Solution {
+    
+    public List<Integer> rightSideView(TreeNode root) {
+        /**
+         * Solution using level order traversal
+         */
+        List<Integer> view = new LinkedList<Integer>();
+        if (root == null)
+            return view;
+        
+        Queue<TreeNode> currentLevel = new LinkedList<TreeNode>();
+        currentLevel.add(root);
+        while (currentLevel.size()!=0) {
+            Queue<TreeNode> nextLevel = new LinkedList<TreeNode>();
+            TreeNode lastNode = null;
+            while (currentLevel.size()!=0) {
+                TreeNode next = currentLevel.remove();
+                lastNode = next;
+                if (next.left != null) {
+                    nextLevel.add(next.left);
+                }
+                if (next.right != null) {
+                    nextLevel.add(next.right);
+                }
+            }
+            view.add(lastNode.val);
+            currentLevel = nextLevel;
+        }
+        
+        return view;
+    }
+}
 class Solution {
     class helper {
         TreeNode node;
