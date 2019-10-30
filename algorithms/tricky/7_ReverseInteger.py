@@ -2,7 +2,7 @@ class Solution:
     def reverse(self, x: int) -> int:
         x_str = str(x)
         if x < 0:
-            res = int("-" + x_str[::-1][:-1])
+            res = int("-" + x_str[:0:-1])
         else:
             res = int(x_str[::-1])
         

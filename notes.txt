@@ -1,0 +1,3 @@
+1. python reverse string:
+   s[::-1]
+   s[:0:-1] (reversed string without the first character, "-321"[:0:-1] will become "123")

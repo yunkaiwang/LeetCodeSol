@@ -18,23 +18,16 @@ class Solution:
 
         """ linear time algorithm """
         # the linear time algorithm for this problem is very easy to be think of, we start from the two end of the list, and tends to goes to middle, whenever we go, we keep track of the maximum size we met so far(and the indices of the max area if we need), then when we reach the mid point(not the actual mid point, but the point where left boundary and right boundary collide), then we know we are finished since all other possible areas are definitely smaller, this will save us from comparing n^2 numbers to only n numbers since we know the size doesn't only depend on the height but also the distance between two boundaries
-        max = 0
-        start, end = 0, len(height) - 1 # current start and end container
+        i, j = 0, len(height) - 1
+        max_water = 0
         
-        while start < end: # while not reached the middle point yet:
-            l_h = height[start]
-            r_h = height[end]
+        while i < j:
+            l_h = height[i]
+            r_h = height[j]
             
-            if l_h > r_h:
-                h = r_h
+            max_water = max(min(l_h, r_h) * (j-i), max_water)
+            if l_h < r_h:
+                i+=1
             else:
-                h = l_h
-            
-            size = (end - start) * h
-            if size > max:
-                max = size
-            if l_h > r_h:
-                end -= 1
-            else:
-                start += 1
-        return max
+                j-=1
+        return max_water
