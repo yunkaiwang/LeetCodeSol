@@ -10,6 +10,9 @@ https://blog.csdn.net/yutianzuijin/article/details/11477603
 
 Below is the list of questions that I strongly suggest people to review before going to an interview:
 - median of two sorted array: https://leetcode.com/problems/median-of-two-sorted-arrays/
+- merge k sorted lists: https://leetcode.com/problems/merge-k-sorted-lists/
+- KMP algorithm: https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
+                 https://leetcode.com/problems/implement-strstr/
 
 
 Author: Yunkai Wang
