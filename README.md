@@ -13,6 +13,7 @@ Below is the list of questions that I strongly suggest people to review before g
 - merge k sorted lists: https://leetcode.com/problems/merge-k-sorted-lists/
 - KMP algorithm: https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm
                  https://leetcode.com/problems/implement-strstr/
+- LRU Cache: https://leetcode.com/problems/lru-cache/ 
 
 
 Author: Yunkai Wang
