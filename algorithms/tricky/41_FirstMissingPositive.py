@@ -1,7 +1,10 @@
 class Solution:
     def firstMissingPositive(self, nums: 'List[int]') -> 'int':
         """
-        the trick is use the array as the bucket and sort all the numbers in the array where the element >0 and <len(array), then we are able to go through the array and see which on is missing
+        the trick is use the array as the bucket and sort all the
+        numbers in the array where the element >0 and <len(array),
+        then we are able to go through the array and see which on
+        is missing
         """
         i, n = 0, len(nums)
         while i < n:

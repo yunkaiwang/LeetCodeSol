@@ -1,3 +1,6 @@
+"""
+Not an interesting question to work on, simply checks if there are 1-9 in each row, column, block
+"""
 class Solution:
     def isValidSudoku(self, board):
         """

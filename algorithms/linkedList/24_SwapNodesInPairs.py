@@ -7,7 +7,9 @@
 class Solution:
     def swapPairs(self, head):
         """
-        nothing to say about this one, simple check if next two pointers are empty, if not then swap them (not swaping the values!), O(n) solution provided, best run time 52ms beats 99.5%
+        nothing to say about this one, simple check if next two pointers are empty,
+        if not then swap them (not swaping the values!), O(n) solution provided,
+        best run time 52ms beats 99.5%
         """
         if not head or not head.next:
             return head

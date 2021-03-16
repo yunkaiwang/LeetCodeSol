@@ -1,7 +1,8 @@
 class Solution:
     def threeSumClosest(self, nums, target):
         """
-        n^2 solution using the same idea for 3-sum, use two points to do a linear search in order to find the closest sum, beats 85%
+        n^2 solution using the same idea for 3-sum, use two points to do a
+        linear search in order to find the closest sum, beats 85%
         """
         closest = float('inf')
         nums.sort() # sort list
