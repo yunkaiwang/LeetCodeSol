@@ -1,7 +1,10 @@
 class Solution:
     def search(self, nums, target):
         """
-        Potentially O(n) solution but O(logn) solution is not possible for this question since there are duplicate elements, so you need to linearly search through the elements to get rid of the duplicates otherwise you don't know which side to go after current step
+        Potentially O(n) solution but O(logn) solution is not possible for this question
+        since there are duplicate elements, so you need to linearly search through the
+        elements to get rid of the duplicates otherwise you don't know which side to
+        go after current step
         """
         l, r = 0, len(nums) - 1
         

@@ -22,7 +22,16 @@ class Solution:
         
         
         """
-        I have another idea of solving this problem, with code listed below, the code still has problems that need to be fixed as it still fails the test, I tried to fix it but I have no luck finishing it since the DP solution is very obvious. The second idea runs in linear time in the size of s and p, so they will loop through s and p exactly once, but there are too many cases to be considered, for instance, if s is 'aab', and p is 'a*b*ab', then the algorithm need to figure out that the first 'a*' should only match 'a', not 'aa', so the actual solution(if finished), should be very complicated and hard to understand, but it's a good reference so that I copied them below.
+        I have another idea of solving this problem, with code listed below,
+        the code still has problems that need to be fixed as it still fails
+        the test, I tried to fix it but I have no luck finishing it since the
+        DP solution is very obvious. The second idea runs in linear time in
+        the size of s and p, so they will loop through s and p exactly once,
+        but there are too many cases to be considered, for instance, if s is
+        'aab', and p is 'a*b*ab', then the algorithm need to figure out that
+        the first 'a*' should only match 'a', not 'aa', so the actual
+        solution(if finished), should be very complicated and hard to understand,
+        but it's a good reference so that I copied them below.
         """
 #         prev_match_char, curr_pattern_index, curr_string_index, prev_count = "", 0, 0, 0
 #         str_len = len(s)

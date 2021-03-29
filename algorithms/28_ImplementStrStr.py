@@ -1,7 +1,15 @@
 class Solution:
     def strStr(self, haystack, needle):
         """
-        Two solutions are provided, one using naive approach, which takes time O(n * m) where n is length of haystack and m is length of needle, this takes 56ms(best run time). The other approach uses KMP algorithm, even though the run time is worse (since the test cases are so simple so KMP algorithm is too complicated for these cases), but it should be generally better for larger input and it can be easily modified so that it can be used to search all occurance of needle string in haystack string
+        Two solutions are provided, one using naive approach,
+        which takes time O(n * m) where n is length of haystack
+        and m is length of needle, this takes 56ms(best run time).
+        The other approach uses KMP algorithm, even though the
+        run time is worse (since the test cases are so simple so
+        KMP algorithm is too complicated for these cases), but it
+        should be generally better for larger input and it can be
+        easily modified so that it can be used to search all occurrence
+        of needle string in haystack string
         """
         if not needle:
             return 0

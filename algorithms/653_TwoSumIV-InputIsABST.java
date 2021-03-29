@@ -10,7 +10,11 @@
 class Solution {
     public boolean findTarget(TreeNode root, int k) {
         /**
-         * Has to use O(n) space for this question, otherwise we can run in O(nlogn) time with O(1) space (find k-num for every num in the BST, there are n elements, finding element in BST takes O(logn), so total running time is O(nlogn) but the space used is constant)
+         * Has to use O(n) space for this question, otherwise we can
+         run in O(nlogn) time with O(1) space (find k-num for every
+         num in the BST, there are n elements, finding element in BST
+         takes O(logn), so total running time is O(nlogn) but the
+         space used is constant)
          */
         List<Integer> l = new ArrayList<Integer>();
         inorder(root, l);
