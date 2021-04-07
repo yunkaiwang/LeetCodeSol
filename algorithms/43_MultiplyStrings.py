@@ -1,7 +1,11 @@
 class Solution:
     def multiply(self, num1, num2):
         """
-        Solution without converting string to number directly, it calculates the product of every digit, it only beats 50%. However, it seems like most of the other answers are directly converting string to number, which is explicitly prohibited by the question.
+        Solution without converting string to number directly,
+        it calculates the product of every digit, it only
+        beats 50%. However, it seems like most of
+        the other answers are directly converting string to number,
+        which is explicitly prohibited by the question.
         """ 
         res = 0
         digit = 1

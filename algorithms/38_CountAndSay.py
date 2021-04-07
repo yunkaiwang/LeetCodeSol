@@ -1,7 +1,9 @@
 class Solution:
     def countAndSay(self, n):
         """
-        The only hard thing is understanding the sequence, then implementing the solution is very straignt-forward, best runtime is 56ms, beats 96%
+        The only hard thing is understanding the sequence,
+        then implementing the solution is very straignt-forward,
+        best runtime is 56ms, beats 96%
         """
         cur_str = "1"
         for _ in range(n - 1):

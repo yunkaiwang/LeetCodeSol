@@ -1,7 +1,8 @@
 class Solution:
     def searchRange(self, nums, target):
         """
-        Had to run binary search twice, but the runtime is still O(logn). We need to run twice since we need to find the start and end indices. Best run time 56ms beats 98%.
+        Had to run binary search twice, but the runtime is still O(logn). We need to run
+        twice since we need to find the start and end indices. Best run time 56ms beats 98%.
         """
         class Solution:
     def searchRange(self, nums, target):
