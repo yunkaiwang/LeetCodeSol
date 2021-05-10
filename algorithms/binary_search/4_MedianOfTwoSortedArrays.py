@@ -23,5 +23,5 @@ class Solution:
         if (m + n) % 2:
             return findKth(0, 0, (m+n)//2)
         else:
-            return (findKth(0, 0, (m+n)//2-1) + findKth(0, 0, (m+n)//2)) / 2
+            return (findKth(0, 0, (m+n)//2-1)+findKth(0,0,(m+n)//2))/2
         
